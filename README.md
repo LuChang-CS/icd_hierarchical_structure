@@ -22,16 +22,16 @@ ICD_HIERARCHICAL_STRUCTURE
      procedure_codes.json    # (66,680 KB) ICD-10-CM procedure code only
 ```
 
-## Fields
+## Field Examples
 
 ### ICD-9-CM
 
 ```json
 [
     {
-        "code": "001-139",  // code name
-        "desc": "Infectious And Parasitic Diseases",  // disease name
-        "children": [  // children diseases
+        "code": "001-139",
+        "desc": "Infectious And Parasitic Diseases",
+        "children": [
             {
                 "code": "001-009",
                 "desc": "Intestinal Infectious Diseases",
@@ -45,16 +45,12 @@ ICD_HIERARCHICAL_STRUCTURE
                                 "desc": "Cholera due to vibrio cholerae",
                                 "children": []
                             }
-                        // ...
                         ]
                     }
-                // ...
                 ]
             }
-        // ...
         ]
     }
-    // ...
 ]
 ```
 
@@ -65,14 +61,13 @@ The fields of procedure codes are the same as diagnosis codes.
 ```json
 [
     {
-        "code": "A00-B99",  // code name
-        "desc": "Certain infectious and parasitic diseases",  // disease name with abbreviations
-        "children": [  // children diseases
+        "code": "A00-B99",
+        "desc": "Certain infectious and parasitic diseases",
+        "children": [
             {
                 "code": "A00-A09",
                 "desc": "Intestinal infectious diseases",
                 "children": [
-                    // ...
                     {
                         "code": "A01",
                         "desc": "Typhoid and paratyphoid fevers",
@@ -85,21 +80,16 @@ The fields of procedure codes are the same as diagnosis codes.
                                         "code": "A01.00",
                                         "desc": "\u2026\u2026 unspecified",
                                         "children": [],
-                                        "desc_full": "Typhoid fever unspecified"    // full disease name
+                                        "desc_full": "Typhoid fever unspecified"
                                     },
-                                // ...
                                 ]
                             }
-                        // ...
                         ]
                     }
-                // ...
                 ]
             }
-        // ...
         ]
     }
-    // ...
 ]
 ```
 
