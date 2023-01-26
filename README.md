@@ -5,19 +5,21 @@ The json files contain code, descriptions, and hierarchies of ICD codes.
 
 The sources are [icd9data.com (2015 version)](http://www.icd9data.com/) and [icd10data.com (2023 version)](https://www.icd10data.com/).
 
+There might be errors when collecting the data. If you find any error, please feel free to post an issue.
+
 ## Structure
 ```bash
 ICD_HIERARCHICAL_STRUCTURE
 │
-├─ICD-10-CM
-│    diagnosis_codes.json    # ICD-9-CM diagnosis code only
-│    icd_codes.json          # ICD-9-CM codes, including diagnosis codes and procedure codes
-│    procedure_codes.json    # ICD-9-CM procedure code only
+├─ICD-9-CM
+│    diagnosis_codes.json    # (4,828 KB) ICD-9-CM diagnosis code only
+│    icd_codes.json          # (5,924 KB) ICD-9-CM codes, including diagnosis codes and procedure codes
+│    procedure_codes.json    # (1,096 KB) ICD-9-CM procedure code only
 │
-└─ICD-9-CM
-     diagnosis_codes.json    # ICD-10-CM diagnosis code only
-     icd_codes.json          # ICD-10-CM codes, including diagnosis codes and procedure codes
-     procedure_codes.json    # ICD-10-CM procedure code only
+└─ICD-10-CM
+     diagnosis_codes.json    # (26,223 KB) ICD-10-CM diagnosis code only
+     icd_codes.json          # (92,902 KB) ICD-10-CM codes, including diagnosis codes and procedure codes
+     procedure_codes.json    # (66,680 KB) ICD-10-CM procedure code only
 ```
 
 ## Fields
